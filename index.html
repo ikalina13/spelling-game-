@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Spelling Surprise ✨</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- BACKGROUND HEARTS -->
+    <div class="bg-hearts" id="bg-hearts"></div>
+
+    <!-- 1. INTRO ENVELOPE SCREEN -->
+    <div id="intro-screen" class="screen active">
+        <div class="envelope-container" id="envelope-container">
+            <div class="envelope-back"></div>
+            <div class="letter" id="letter">
+                <div class="letter-content">
+                    <p>Do you want a surprise?? welp you have to play the spelling game first :3</p>
+                    <button id="play-btn" class="play-btn">Play Game 💖</button>
+                </div>
+            </div>
+            <div class="envelope-front"></div>
+            <div class="envelope-top" id="envelope-top"></div>
+            <div class="click-hint" id="click-hint">Click Me ✨</div>
+        </div>
+    </div>
+
+    <!-- 2. GAME SCREEN -->
+    <div id="game-screen" class="screen hidden">
+        <div class="game-ui">
+            <div class="progress-wrap">
+                <div class="progress-bar" id="progress-bar"></div>
+                <div id="progress-text">💖 0/3</div>
+            </div>
+            
+            <div id="word-card" class="word-card">
+                <div class="image-area">
+                    <img id="clue-img" src="" alt="clue">
+                </div>
+                <div id="inputs-area" class="inputs-area"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. FINAL CELEBRATION -->
+    <div id="final-screen" class="screen hidden">
+        <div class="final-box">
+            <h1 class="bounce">You completed everything 💖</h1>
+        </div>
+    </div>
+
+    <!-- SOUNDS -->
+    <audio id="snd-success" src="https://assets.mixkit.co/active_storage/sfx/2013/2013-preview.mp3"></audio>
+    <audio id="snd-error" src="https://assets.mixkit.co/active_storage/sfx/2869/2869-preview.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
